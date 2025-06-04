@@ -112,54 +112,6 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Contact Section */}
-      <section className="py-16 bg-gradient-to-r from-primary-500 to-primary-600">
-        <div className="container mx-auto px-4">
-          <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl p-8 md:p-12 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="inline-block p-3 bg-primary-100 rounded-full mb-6">
-                <User className="w-8 h-8 text-primary-600" />
-              </div>
-              
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                Let's Connect & Collaborate
-              </h2>
-              
-              <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-                Have questions about Product Management? Want to discuss PM strategies or share insights? 
-                I'd love to connect with fellow PMs and aspiring product professionals.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button 
-                  asChild
-                  size="lg"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                >
-                  <a href="https://www.linkedin.com/in/muskan-gupta98/" target="_blank" rel="noopener noreferrer">
-                    <Linkedin className="w-5 h-5 mr-2" />
-                    Connect on LinkedIn
-                  </a>
-                </Button>
-                
-                <Button 
-                  variant="outline"
-                  size="lg"
-                  className="border-2 border-gray-300 text-gray-600 hover:bg-gray-50 px-8 py-4 text-lg rounded-full transition-all duration-300"
-                >
-                  <Mail className="w-5 h-5 mr-2" />
-                  Send Message
-                </Button>
-              </div>
-              
-              <p className="text-sm text-gray-500 mt-6">
-                🚀 Currently curating the best PM resources for the community
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Main Content */}
       <main className="container mx-auto px-4 py-16">
         {/* Resource Sections */}
