@@ -1,4 +1,60 @@
-# Welcome to your Lovable project
+# PM Knowledge Oasis
+
+A comprehensive resource hub for product managers, featuring curated content, learning resources, and an AI-powered chatbot.
+
+## Features
+
+- Curated product management resources
+- YouTube channels and playlists
+- Blogs and articles
+- LinkedIn posts
+- Case studies
+- Templates
+- Course resources
+- AI-powered chatbot for PM questions
+
+## Chatbot Feature
+
+The chatbot provides tailored responses to product management questions based on experience level:
+
+- **Beginner**: Simple, conceptual explanations with analogies
+- **Intermediate**: Frameworks, tools, examples, and metrics
+- **Advanced**: Nuanced tradeoffs, edge cases, and systems thinking
+
+### Setup
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file in the root directory and add your OpenAI API key:
+   ```
+   OPENAI_API_KEY=your_api_key_here
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+### Usage
+
+1. Select your experience level (Beginner/Intermediate/Advanced)
+2. Type your question in the chat input
+3. Receive a tailored response based on your experience level
+
+## Development
+
+Built with:
+- Next.js
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- OpenAI API
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Project info
 
