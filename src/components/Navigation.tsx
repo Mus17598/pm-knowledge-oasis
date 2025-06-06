@@ -1,6 +1,5 @@
-
 import { useState, useEffect } from 'react';
-import { Menu, X, BookOpen } from 'lucide-react';
+import { Menu, X, BookOpen, MessageSquare } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/ThemeToggle';
 
@@ -45,7 +44,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <div className="w-10 h-10 bg-primary-500 rounded-xl flex items-center justify-center">
               <BookOpen className="w-6 h-6 text-white" />
             </div>
@@ -65,6 +64,13 @@ const Navigation = () => {
                 {item.name}
               </button>
             ))}
+            <Button
+              onClick={() => smoothScroll('chatbot-section')}
+              className="bg-primary hover:bg-primary/90 text-white cursor-pointer"
+            >
+              <MessageSquare className="mr-2 h-5 w-5" />
+              Chat Assistant
+            </Button>
             <ThemeToggle />
           </div>
 
@@ -95,6 +101,13 @@ const Navigation = () => {
                   {item.name}
                 </button>
               ))}
+              <Button
+                onClick={() => smoothScroll('chatbot-section')}
+                className="w-full bg-primary hover:bg-primary/90 text-white cursor-pointer"
+              >
+                <MessageSquare className="mr-2 h-5 w-5" />
+                Chat Assistant
+              </Button>
             </div>
           </div>
         )}

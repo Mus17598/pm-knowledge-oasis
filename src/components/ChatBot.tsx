@@ -1,9 +1,12 @@
 import { useState } from 'react';
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Card } from "@/components/ui/card";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import { Send } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { ScrollArea } from '@/components/ui/scroll-area';
+import { Badge } from '@/components/ui/badge';
+import { toast } from '@/components/ui/use-toast';
 
 type ExperienceLevel = 'Beginner' | 'Intermediate' | 'Advanced';
 
@@ -21,7 +24,16 @@ export function ChatBot() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!input.trim()) return;
+    
+    // Input validation
+    if (!input.trim()) {
+      toast({
+        title: "Empty Question",
+        description: "Please enter a question before sending.",
+        variant: "destructive",
+      });
+      return;
+    }
 
     const userMessage: Message = {
       role: 'user',
@@ -34,7 +46,6 @@ export function ChatBot() {
     setIsLoading(true);
 
     try {
-      // TODO: Replace with actual API call
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: {
@@ -46,18 +57,28 @@ export function ChatBot() {
         }),
       });
 
+      if (!response.ok) {
+        throw new Error('Failed to get response from the server');
+      }
+
       const data = await response.json();
       
-      const assistantMessage: Message = {
+      if (!data.response) {
+        throw new Error('No response received from the server');
+      }
+
+      setMessages(prev => [...prev, {
         role: 'assistant',
         content: data.response,
         level
-      };
-
-      setMessages(prev => [...prev, assistantMessage]);
+      }]);
     } catch (error) {
       console.error('Error:', error);
-      // Add error message to chat
+      toast({
+        title: "Error",
+        description: "Failed to get a response. Please try again.",
+        variant: "destructive",
+      });
       setMessages(prev => [...prev, {
         role: 'assistant',
         content: 'Sorry, I encountered an error. Please try again.',
@@ -69,12 +90,13 @@ export function ChatBot() {
   };
 
   return (
-    <Card className="w-full max-w-4xl mx-auto p-4">
-      <div className="flex flex-col h-[600px]">
-        <div className="flex items-center gap-4 mb-4">
+    <Card className="w-full">
+      <CardHeader>
+        <CardTitle className="text-center mb-4">PM Assistant</CardTitle>
+        <div className="flex justify-center">
           <Select value={level} onValueChange={(value: ExperienceLevel) => setLevel(value)}>
-            <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder="Select level" />
+            <SelectTrigger className="w-[200px]">
+              <SelectValue placeholder="Select experience level" />
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="Beginner">Beginner</SelectItem>
@@ -83,50 +105,64 @@ export function ChatBot() {
             </SelectContent>
           </Select>
         </div>
-
-        <ScrollArea className="flex-1 p-4 border rounded-lg mb-4">
-          {messages.map((message, index) => (
-            <div
-              key={index}
-              className={`mb-4 ${
-                message.role === 'user' ? 'text-right' : 'text-left'
-              }`}
-            >
+      </CardHeader>
+      <CardContent>
+        <ScrollArea className="h-[400px] rounded-md border p-4 mb-4">
+          <div className="space-y-4">
+            {messages.length === 0 && (
+              <div className="text-center text-muted-foreground py-8">
+                Ask me anything about product management!
+              </div>
+            )}
+            {messages.map((message, index) => (
               <div
-                className={`inline-block p-3 rounded-lg ${
-                  message.role === 'user'
-                    ? 'bg-primary text-primary-foreground'
-                    : 'bg-muted'
+                key={index}
+                className={`flex ${
+                  message.role === 'user' ? 'justify-end' : 'justify-start'
                 }`}
               >
-                {message.content}
-                {message.level && (
-                  <div className="text-xs mt-1 opacity-70">
-                    Level: {message.level}
-                  </div>
-                )}
+                <div
+                  className={`max-w-[80%] rounded-lg p-4 ${
+                    message.role === 'user'
+                      ? 'bg-primary text-primary-foreground'
+                      : 'bg-muted'
+                  }`}
+                >
+                  {message.level && message.role === 'assistant' && (
+                    <Badge variant="secondary" className="mb-2">
+                      {message.level} Level
+                    </Badge>
+                  )}
+                  <p className="whitespace-pre-wrap">{message.content}</p>
+                </div>
               </div>
-            </div>
-          ))}
-          {isLoading && (
-            <div className="text-center text-muted-foreground">
-              Thinking...
-            </div>
-          )}
+            ))}
+            {isLoading && (
+              <div className="flex justify-start">
+                <div className="bg-muted rounded-lg p-4">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-primary rounded-full animate-bounce" />
+                    <div className="w-2 h-2 bg-primary rounded-full animate-bounce delay-100" />
+                    <div className="w-2 h-2 bg-primary rounded-full animate-bounce delay-200" />
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
         </ScrollArea>
-
         <form onSubmit={handleSubmit} className="flex gap-2">
           <Input
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Ask a product management question..."
             className="flex-1"
+            disabled={isLoading}
           />
           <Button type="submit" disabled={isLoading}>
-            Send
+            <Send className="h-4 w-4" />
           </Button>
         </form>
-      </div>
+      </CardContent>
     </Card>
   );
 } 
