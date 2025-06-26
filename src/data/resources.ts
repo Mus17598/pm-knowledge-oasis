@@ -8,9 +8,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product School",
     views: "2M+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Mind the Product",
@@ -21,9 +20,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Mind the Product",
     views: "60K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "The Product Folks",
@@ -34,9 +32,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "The Product Folks",
     views: "10K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Alliance",
@@ -47,9 +44,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Alliance",
     views: "30K+ subscribers",
-    level: "Intermediate" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "Intermediate",
+    source: "YouTube"
   },
   {
     title: "Dan Olsen - Lean Product & Lean Analytics",
@@ -60,9 +56,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Dan Olsen",
     views: "20K+ subscribers",
-    level: "Intermediate" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "Intermediate",
+    source: "YouTube"
   },
   {
     title: "Product Gym",
@@ -73,9 +68,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Gym",
     views: "18K+ subscribers",
-    level: "Beginner" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "Beginner",
+    source: "YouTube"
   },
   {
     title: "Productized",
@@ -86,9 +80,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Productized",
     views: "10K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product HQ",
@@ -99,9 +92,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product HQ",
     views: "15K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Roman Pichler",
@@ -112,9 +104,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Roman Pichler",
     views: "12K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Collective",
@@ -125,9 +116,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Collective",
     views: "8K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Exponent",
@@ -138,9 +128,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Exponent",
     views: "60K+ subscribers",
-    level: "Intermediate" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "Intermediate",
+    source: "YouTube"
   },
   {
     title: "Diego Granados",
@@ -151,9 +140,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Diego Granados",
     views: "25K+ subscribers",
-    level: "Intermediate" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "Intermediate",
+    source: "YouTube"
   },
   {
     title: "Lenny's Podcast (YouTube)",
@@ -164,9 +152,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Lenny Rachitsky",
     views: "40K+ subscribers",
-    level: "Advanced" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "Advanced",
+    source: "YouTube"
   },
   {
     title: "Product Management - Stanford eCorner",
@@ -177,9 +164,8 @@ export const youtubeResources = [
     format: "Playlist",
     author: "Stanford eCorner",
     views: "N/A",
-    level: "Advanced" as const,
-    source: "YouTube",
-    type: "Playlist"
+    level: "Advanced",
+    source: "YouTube"
   },
   {
     title: "Simplilearn Product Management Tutorials",
@@ -190,9 +176,8 @@ export const youtubeResources = [
     format: "Video",
     author: "Simplilearn",
     views: "200K+ views",
-    level: "Beginner" as const,
-    source: "YouTube",
-    type: "Video"
+    level: "Beginner",
+    source: "YouTube"
   },
   {
     title: "Product Management by Chisel Labs",
@@ -203,9 +188,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Chisel Labs",
     views: "5K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by ProductPlan",
@@ -216,9 +200,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "ProductPlan",
     views: "7K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Atlassian",
@@ -229,9 +212,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Atlassian",
     views: "100K+ subscribers",
-    level: "Intermediate" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "Intermediate",
+    source: "YouTube"
   },
   {
     title: "Product Management by Nielsen Norman Group",
@@ -242,9 +224,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Nielsen Norman Group",
     views: "70K+ subscribers",
-    level: "Intermediate" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "Intermediate",
+    source: "YouTube"
   },
   {
     title: "Product Management by Amplitude",
@@ -255,9 +236,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Amplitude",
     views: "8K+ subscribers",
-    level: "Advanced" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "Advanced",
+    source: "YouTube"
   },
   {
     title: "Product Management by Mixpanel",
@@ -268,9 +248,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Mixpanel",
     views: "6K+ subscribers",
-    level: "Advanced" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "Advanced",
+    source: "YouTube"
   },
   {
     title: "Product Management by Reforge",
@@ -281,9 +260,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Reforge",
     views: "9K+ subscribers",
-    level: "Advanced" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "Advanced",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product-Led",
@@ -294,9 +272,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "ProductLed",
     views: "10K+ subscribers",
-    level: "Intermediate" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "Intermediate",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Coalition",
@@ -307,9 +284,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Coalition",
     views: "11K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by ProductCamp",
@@ -320,9 +296,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "ProductCamp",
     views: "5K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by ProductTank",
@@ -333,9 +308,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "ProductTank",
     views: "7K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product-Led Alliance",
@@ -346,9 +320,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product-Led Alliance",
     views: "8K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Marketing Alliance",
@@ -359,9 +332,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Marketing Alliance",
     views: "5K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by ProductCraft",
@@ -372,9 +344,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "ProductCraft",
     views: "4K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Manager HQ",
@@ -385,9 +356,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Manager HQ",
     views: "6K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Faculty",
@@ -398,9 +368,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Faculty",
     views: "5K+ subscribers",
-    level: "Advanced" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "Advanced",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Management Insider",
@@ -411,9 +380,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Insider",
     views: "3K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Manager Interview",
@@ -424,9 +392,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Manager Interview",
     views: "4K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Management Festival",
@@ -437,9 +404,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Festival",
     views: "7K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Mastery Now",
@@ -450,9 +416,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Mastery Now",
     views: "2K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Management World",
@@ -463,9 +428,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management World",
     views: "3K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Management Events",
@@ -476,9 +440,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Events",
     views: "2K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Management Training",
@@ -489,9 +452,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Training",
     views: "2K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Management Academy",
@@ -502,9 +464,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Academy",
     views: "2K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Management University",
@@ -515,9 +476,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management University",
     views: "1K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Management Pro",
@@ -528,9 +488,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Pro",
     views: "1K+ subscribers",
-    level: "Advanced" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "Advanced",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Management Club",
@@ -541,9 +500,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Club",
     views: "1K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Management Network",
@@ -554,9 +512,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Network",
     views: "1K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Management Insights",
@@ -567,9 +524,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Insights",
     views: "1K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Management Tips",
@@ -580,9 +536,8 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Tips",
     views: "1K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   },
   {
     title: "Product Management by Product Management Playbook",
@@ -593,323 +548,84 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Playbook",
     views: "1K+ subscribers",
-    level: "All" as const,
-    source: "YouTube",
-    type: "Channel"
+    level: "All",
+    source: "YouTube"
   }
 ];
 
 export const blogResources = [
   {
     title: "Mind the Product",
+    description: "Global product management community",
     url: "https://www.mindtheproduct.com/",
-    description: "Global product management community with insights, best practices, and thought leadership from industry experts",
-    category: "Product Management",
-    tags: ["Community", "Best Practices", "Thought Leadership", "Strategy"],
-    format: "Blog",
-    author: "Mind the Product Team",
-    level: "All" as const,
-    source: "Blog",
-    type: "Article"
+    category: "blog"
   },
   {
     title: "ProductCraft",
+    description: "Product management insights and best practices",
     url: "https://productcraft.com/",
-    description: "Product management insights and best practices from experienced PMs and industry leaders",
-    category: "Product Management", 
-    tags: ["Insights", "Best Practices", "Leadership", "Strategy"],
-    format: "Blog",
-    author: "ProductCraft Team",
-    level: "All" as const,
-    source: "Blog",
-    type: "Article"
-  },
-  {
-    title: "Lenny's Newsletter",
-    url: "https://www.lennysnewsletter.com/",
-    description: "The most popular product management newsletter with deep dives into growth, strategy, and career advice",
-    category: "Newsletter",
-    tags: ["Newsletter", "Growth", "Strategy", "Career"],
-    format: "Newsletter",
-    author: "Lenny Rachitsky",
-    level: "Intermediate" as const,
-    source: "Substack",
-    type: "Newsletter"
-  },
-  {
-    title: "First Round Review",
-    url: "https://review.firstround.com/",
-    description: "In-depth articles on product management, leadership, and startup best practices from First Round Capital",
-    category: "Startup",
-    tags: ["Leadership", "Startup", "Best Practices", "Strategy"],
-    format: "Blog",
-    author: "First Round Team",
-    level: "Advanced" as const,
-    source: "Blog",
-    type: "Article"
+    category: "blog"
   }
 ];
 
 export const linkedinResources = [
   {
-    title: "Shreyas Doshi",
-    url: "https://www.linkedin.com/in/shreyasdoshi/",
-    description: "Product leader sharing frameworks and mental models for better product decisions",
-    category: "Product Management",
-    tags: ["Frameworks", "Mental Models", "Leadership", "Strategy"],
-    format: "LinkedIn Profile",
-    author: "Shreyas Doshi",
-    level: "Intermediate" as const,
-    source: "LinkedIn",
-    type: "Profile"
+    title: "Product Management Network",
+    description: "Connect with product professionals",
+    url: "https://www.linkedin.com/groups/123456/",
+    category: "linkedin"
   },
   {
-    title: "Lenny Rachitsky",
-    url: "https://www.linkedin.com/in/lennyrachitsky/",
-    description: "Product and growth advisor sharing insights on product strategy and growth tactics",
-    category: "Growth",
-    tags: ["Growth", "Strategy", "Product", "Insights"],
-    format: "LinkedIn Profile", 
-    author: "Lenny Rachitsky",
-    level: "Advanced" as const,
-    source: "LinkedIn",
-    type: "Profile"
-  },
-  {
-    title: "Product Management",
-    url: "https://www.linkedin.com/groups/42629/",
-    description: "Large LinkedIn group for product management professionals to share insights and network",
-    category: "Community",
-    tags: ["Community", "Networking", "Discussion", "Jobs"],
-    format: "LinkedIn Group",
-    author: "PM Community",
-    level: "All" as const,
-    source: "LinkedIn",
-    type: "Group"
+    title: "Product Management Jobs",
+    description: "Find product management opportunities",
+    url: "https://www.linkedin.com/jobs/",
+    category: "linkedin"
   }
 ];
 
 export const courseResources = [
   {
-    title: "Product Management Fundamentals",
+    title: "Product Management 101",
+    description: "Introduction to product management",
     url: "https://www.coursera.org/learn/product-management",
-    description: "Comprehensive introduction to product management covering strategy, development, and launch",
-    category: "Product Management",
-    tags: ["Fundamentals", "Strategy", "Development", "Launch"],
-    format: "Online Course",
-    author: "Coursera",
-    level: "Beginner" as const,
-    source: "Coursera",
-    type: "Course"
+    category: "course"
   },
   {
     title: "Advanced Product Management",
+    description: "Deep dive into product strategy",
     url: "https://www.udemy.com/course/advanced-product-management/",
-    description: "Deep dive into advanced product strategy, metrics, and leadership for experienced PMs",
-    category: "Advanced",
-    tags: ["Advanced", "Strategy", "Metrics", "Leadership"],
-    format: "Online Course",
-    author: "Udemy Instructor",
-    level: "Advanced" as const,
-    source: "Udemy", 
-    type: "Course"
-  },
-  {
-    title: "Product School Certification",
-    url: "https://productschool.com/",
-    description: "Industry-recognized product management certification program with hands-on projects",
-    category: "Certification",
-    tags: ["Certification", "Hands-on", "Projects", "Career"],
-    format: "Certification Program",
-    author: "Product School",
-    level: "Intermediate" as const,
-    source: "Product School",
-    type: "Certification"
+    category: "course"
   }
 ];
 
 export const pdfResources = [
   {
     title: "Product Requirements Document Template",
+    description: "Template for writing PRDs",
     url: "/templates/prd-template.pdf",
-    description: "Comprehensive PRD template with sections for requirements, user stories, and acceptance criteria",
-    category: "Template",
-    tags: ["Template", "PRD", "Requirements", "Documentation"],
-    format: "PDF Template",
-    author: "PMStarter",
-    level: "Beginner" as const,
-    source: "Template",
-    type: "Document"
+    category: "pdf"
   },
   {
     title: "Product Roadmap Template",
-    url: "/templates/roadmap-template.pdf", 
-    description: "Strategic product roadmap template for planning and communicating product vision",
-    category: "Template",
-    tags: ["Template", "Roadmap", "Strategy", "Planning"],
-    format: "PDF Template",
-    author: "PMStarter",
-    level: "Intermediate" as const,
-    source: "Template",
-    type: "Document"
-  },
-  {
-    title: "User Research Guide",
-    url: "/templates/user-research-guide.pdf",
-    description: "Complete guide to conducting user research including methods, templates, and analysis",
-    category: "Research",
-    tags: ["Research", "User Research", "Methods", "Analysis"],
-    format: "PDF Guide",
-    author: "PMStarter",
-    level: "All" as const,
-    source: "Guide",
-    type: "Document"
+    description: "Template for product roadmaps",
+    url: "/templates/roadmap-template.pdf",
+    category: "pdf"
   }
 ];
 
 export const pmProfiles = [
   {
-    name: "Lenny Rachitsky",
-    role: "Product & Growth Advisor",
-    company: "Former Airbnb",
-    highlight: "Author of Lenny's Newsletter - the most popular product management newsletter with 500k+ subscribers",
-    tags: ["Newsletter", "Growth", "Product Strategy", "Metrics"],
-    linkedinUrl: "https://www.linkedin.com/in/lennyrachitsky/"
+    name: "Marty Cagan",
+    title: "Founder, Silicon Valley Product Group",
+    description: "Product management thought leader and author",
+    url: "https://www.linkedin.com/in/cagan/",
+    image: "https://media.licdn.com/dms/image/C5603AQHXgQzQwXqQYw/profile-displayphoto-shrink_800_800/0/1516256199140?e=1718236800&v=beta&t=YQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQ"
   },
   {
     name: "Shreyas Doshi",
-    role: "Product Leader & Advisor",
-    company: "Former Stripe, Twitter",
-    highlight: "Known for clear product thinking frameworks and mental models that help PMs make better decisions",
-    tags: ["Frameworks", "Mental Models", "Leadership", "Strategy"],
-    linkedinUrl: "https://www.linkedin.com/in/shreyasdoshi/"
-  },
-  {
-    name: "Marty Cagan",
-    role: "Founder & Partner",
-    company: "Silicon Valley Product Group",
-    highlight: "Author of 'Inspired' and 'Empowered' - foundational books for modern product management",
-    tags: ["Books", "Product Discovery", "Team Empowerment", "Coaching"],
-    linkedinUrl: "https://www.linkedin.com/in/cagan/"
-  },
-  {
-    name: "April Dunford",
-    role: "Positioning Expert",
-    company: "Ambient Strategy",
-    highlight: "Author of 'Obviously Awesome' - the definitive guide to product positioning and messaging",
-    tags: ["Positioning", "Messaging", "Go-to-Market", "B2B"],
-    linkedinUrl: "https://www.linkedin.com/in/aprildunford/"
-  },
-  {
-    name: "Teresa Torres",
-    role: "Product Discovery Coach",
-    company: "Product Talk",
-    highlight: "Expert in continuous product discovery and author of 'Continuous Discovery Habits'",
-    tags: ["Discovery", "Research", "Customer Interviews", "Coaching"],
-    linkedinUrl: "https://www.linkedin.com/in/teresatorres/"
-  },
-  {
-    name: "John Cutler",
-    role: "Product Evangelist",
-    company: "Amplitude",
-    highlight: "Thought leader on product operations, experimentation, and building high-performing product teams",
-    tags: ["Product Ops", "Experimentation", "Data", "Team Building"],
-    linkedinUrl: "https://www.linkedin.com/in/johnpcutler/"
-  },
-  {
-    name: "Gibson Biddle",
-    role: "Former VP Product",
-    company: "Netflix",
-    highlight: "Led product at Netflix during hypergrowth, known for strategic thinking and product leadership insights",
-    tags: ["Strategy", "Leadership", "Scaling", "Entertainment"],
-    linkedinUrl: "https://www.linkedin.com/in/gibsonbiddle/"
-  },
-  {
-    name: "Melissa Perri",
-    role: "CEO & Founder",
-    company: "Produx Labs",
-    highlight: "Author of 'Escaping the Build Trap' and leading voice on product management best practices",
-    tags: ["Product Strategy", "Leadership", "Consulting", "Education"],
-    linkedinUrl: "https://www.linkedin.com/in/melissajperri/"
-  },
-  {
-    name: "Gokul Rajaram",
-    role: "Product & Business Advisor",
-    company: "Former Google, Square",
-    highlight: "Known as the 'Godfather of AdSense' and expert in product-led growth and business strategy",
-    tags: ["AdTech", "Growth", "Business Strategy", "Investing"],
-    linkedinUrl: "https://www.linkedin.com/in/gokulrajaram/"
-  },
-  {
-    name: "Jiaona Zhang",
-    role: "VP Product",
-    company: "Webflow",
-    highlight: "Product leader with expertise in design tools, creator economy, and product-led growth",
-    tags: ["Design Tools", "Creator Economy", "PLG", "Leadership"],
-    linkedinUrl: "https://www.linkedin.com/in/jiaonazhang/"
-  },
-  {
-    name: "Deb Liu",
-    role: "CEO",
-    company: "Ancestry",
-    highlight: "Former Facebook VP who led Marketplace to $100B+ GMV, author of 'Take Back Your Power'",
-    tags: ["Marketplace", "Leadership", "Women in Tech", "Growth"],
-    linkedinUrl: "https://www.linkedin.com/in/debliu/"
-  },
-  {
-    name: "Sachin Rekhi",
-    role: "Founder & CEO",
-    company: "Notejoy",
-    highlight: "Former LinkedIn product leader and prolific writer on product management topics",
-    tags: ["Product Leadership", "Startups", "Writing", "Community"],
-    linkedinUrl: "https://www.linkedin.com/in/sachinrekhi/"
-  },
-  {
-    name: "Reforge Team",
-    role: "Growth & Product Education",
-    company: "Reforge",
-    highlight: "Advanced courses and frameworks for senior product managers and growth professionals",
-    tags: ["Education", "Advanced", "Growth", "Frameworks"],
-    linkedinUrl: "https://www.linkedin.com/company/reforge/"
-  },
-  {
-    name: "Jackie Bavaro",
-    role: "Head of Product",
-    company: "Asana",
-    highlight: "Co-author of 'Cracking the PM Interview' and expert in product management career development",
-    tags: ["Interviews", "Career", "Books", "Mentorship"],
-    linkedinUrl: "https://www.linkedin.com/in/jackiebavaro/"
-  },
-  {
-    name: "Kenneth Berger",
-    role: "VP Product",
-    company: "Slack",
-    highlight: "Product leader focused on enterprise products and building products that scale globally",
-    tags: ["Enterprise", "Scaling", "B2B", "Global Products"],
-    linkedinUrl: "https://www.linkedin.com/in/kennethberger/"
-  },
-  {
-    name: "Elena Verna",
-    role: "Growth Advisor",
-    company: "Former Amplitude, Miro",
-    highlight: "Growth expert and advisor helping companies build sustainable growth engines",
-    tags: ["Growth", "Metrics", "Retention", "Consulting"],
-    linkedinUrl: "https://www.linkedin.com/in/elenaverna/"
-  },
-  {
-    name: "Nir Eyal",
-    role: "Author & Consultant",
-    company: "Nir and Far",
-    highlight: "Author of 'Hooked' and 'Indistractable' - expert in behavioral design and user psychology",
-    tags: ["Behavioral Design", "Psychology", "Habits", "Books"],
-    linkedinUrl: "https://www.linkedin.com/in/nireyal/"
-  },
-  {
-    name: "Kenton Kivestu",
-    role: "VP Product",
-    company: "Google",
-    highlight: "Product leader at Google working on search and AI products, known for technical product insights",
-    tags: ["Search", "AI", "Technical Products", "Google"],
-    linkedinUrl: "https://www.linkedin.com/in/kentonkivestu/"
+    title: "Product Leader & Advisor",
+    description: "Former PM at Stripe, Twitter, and Yahoo",
+    url: "https://www.linkedin.com/in/shreyasdoshi/",
+    image: "https://media.licdn.com/dms/image/C5603AQHXgQzQwXqQYw/profile-displayphoto-shrink_800_800/0/1516256199140?e=1718236800&v=beta&t=YQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQ"
   }
 ];
