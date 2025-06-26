@@ -8,8 +8,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product School",
     views: "2M+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Mind the Product",
@@ -20,8 +21,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Mind the Product",
     views: "60K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "The Product Folks",
@@ -32,8 +34,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "The Product Folks",
     views: "10K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Alliance",
@@ -44,8 +47,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Alliance",
     views: "30K+ subscribers",
-    level: "Intermediate",
-    source: "YouTube"
+    level: "Intermediate" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Dan Olsen - Lean Product & Lean Analytics",
@@ -56,8 +60,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Dan Olsen",
     views: "20K+ subscribers",
-    level: "Intermediate",
-    source: "YouTube"
+    level: "Intermediate" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Gym",
@@ -68,8 +73,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Gym",
     views: "18K+ subscribers",
-    level: "Beginner",
-    source: "YouTube"
+    level: "Beginner" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Productized",
@@ -80,8 +86,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Productized",
     views: "10K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product HQ",
@@ -92,8 +99,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product HQ",
     views: "15K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Roman Pichler",
@@ -104,8 +112,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Roman Pichler",
     views: "12K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Collective",
@@ -116,8 +125,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Collective",
     views: "8K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Exponent",
@@ -128,8 +138,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Exponent",
     views: "60K+ subscribers",
-    level: "Intermediate",
-    source: "YouTube"
+    level: "Intermediate" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Diego Granados",
@@ -140,8 +151,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Diego Granados",
     views: "25K+ subscribers",
-    level: "Intermediate",
-    source: "YouTube"
+    level: "Intermediate" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Lenny's Podcast (YouTube)",
@@ -152,8 +164,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Lenny Rachitsky",
     views: "40K+ subscribers",
-    level: "Advanced",
-    source: "YouTube"
+    level: "Advanced" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management - Stanford eCorner",
@@ -164,8 +177,9 @@ export const youtubeResources = [
     format: "Playlist",
     author: "Stanford eCorner",
     views: "N/A",
-    level: "Advanced",
-    source: "YouTube"
+    level: "Advanced" as const,
+    source: "YouTube",
+    type: "Playlist"
   },
   {
     title: "Simplilearn Product Management Tutorials",
@@ -176,8 +190,9 @@ export const youtubeResources = [
     format: "Video",
     author: "Simplilearn",
     views: "200K+ views",
-    level: "Beginner",
-    source: "YouTube"
+    level: "Beginner" as const,
+    source: "YouTube",
+    type: "Video"
   },
   {
     title: "Product Management by Chisel Labs",
@@ -188,8 +203,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Chisel Labs",
     views: "5K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by ProductPlan",
@@ -200,8 +216,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "ProductPlan",
     views: "7K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Atlassian",
@@ -212,8 +229,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Atlassian",
     views: "100K+ subscribers",
-    level: "Intermediate",
-    source: "YouTube"
+    level: "Intermediate" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Nielsen Norman Group",
@@ -224,8 +242,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Nielsen Norman Group",
     views: "70K+ subscribers",
-    level: "Intermediate",
-    source: "YouTube"
+    level: "Intermediate" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Amplitude",
@@ -236,8 +255,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Amplitude",
     views: "8K+ subscribers",
-    level: "Advanced",
-    source: "YouTube"
+    level: "Advanced" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Mixpanel",
@@ -248,8 +268,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Mixpanel",
     views: "6K+ subscribers",
-    level: "Advanced",
-    source: "YouTube"
+    level: "Advanced" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Reforge",
@@ -260,8 +281,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Reforge",
     views: "9K+ subscribers",
-    level: "Advanced",
-    source: "YouTube"
+    level: "Advanced" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product-Led",
@@ -272,8 +294,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "ProductLed",
     views: "10K+ subscribers",
-    level: "Intermediate",
-    source: "YouTube"
+    level: "Intermediate" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Coalition",
@@ -284,8 +307,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Coalition",
     views: "11K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by ProductCamp",
@@ -296,8 +320,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "ProductCamp",
     views: "5K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by ProductTank",
@@ -308,8 +333,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "ProductTank",
     views: "7K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product-Led Alliance",
@@ -320,8 +346,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product-Led Alliance",
     views: "8K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Marketing Alliance",
@@ -332,8 +359,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Marketing Alliance",
     views: "5K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by ProductCraft",
@@ -344,8 +372,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "ProductCraft",
     views: "4K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Manager HQ",
@@ -356,8 +385,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Manager HQ",
     views: "6K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Faculty",
@@ -368,8 +398,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Faculty",
     views: "5K+ subscribers",
-    level: "Advanced",
-    source: "YouTube"
+    level: "Advanced" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Management Insider",
@@ -380,8 +411,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Insider",
     views: "3K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Manager Interview",
@@ -392,8 +424,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Manager Interview",
     views: "4K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Management Festival",
@@ -404,8 +437,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Festival",
     views: "7K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Mastery Now",
@@ -416,8 +450,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Mastery Now",
     views: "2K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Management World",
@@ -428,8 +463,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management World",
     views: "3K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Management Events",
@@ -440,8 +476,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Events",
     views: "2K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Management Training",
@@ -452,8 +489,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Training",
     views: "2K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Management Academy",
@@ -464,8 +502,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Academy",
     views: "2K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Management University",
@@ -476,8 +515,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management University",
     views: "1K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Management Pro",
@@ -488,8 +528,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Pro",
     views: "1K+ subscribers",
-    level: "Advanced",
-    source: "YouTube"
+    level: "Advanced" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Management Club",
@@ -500,8 +541,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Club",
     views: "1K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Management Network",
@@ -512,8 +554,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Network",
     views: "1K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Management Insights",
@@ -524,8 +567,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Insights",
     views: "1K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Management Tips",
@@ -536,8 +580,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Tips",
     views: "1K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   },
   {
     title: "Product Management by Product Management Playbook",
@@ -548,8 +593,9 @@ export const youtubeResources = [
     format: "Channel",
     author: "Product Management Playbook",
     views: "1K+ subscribers",
-    level: "All",
-    source: "YouTube"
+    level: "All" as const,
+    source: "YouTube",
+    type: "Channel"
   }
 ];
 
