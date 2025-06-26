@@ -1,3 +1,4 @@
+
 import { useState, useMemo } from 'react';
 import { Search, Filter, X, ExternalLink, Star } from 'lucide-react';
 import { Input } from '@/components/ui/input';
@@ -12,7 +13,7 @@ interface Resource {
   description: string;
   tags: string[];
   source: string;
-  level: 'Beginner' | 'Intermediate' | 'Advanced';
+  level: 'Beginner' | 'Intermediate' | 'Advanced' | 'All';
   type: string;
   views?: string;
   author?: string;
