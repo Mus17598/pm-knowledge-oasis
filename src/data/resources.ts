@@ -556,60 +556,168 @@ export const youtubeResources = [
 export const blogResources = [
   {
     title: "Mind the Product",
-    description: "Global product management community",
     url: "https://www.mindtheproduct.com/",
-    category: "blog"
+    description: "Global product management community with insights, best practices, and thought leadership from industry experts",
+    category: "Product Management",
+    tags: ["Community", "Best Practices", "Thought Leadership", "Strategy"],
+    format: "Blog",
+    author: "Mind the Product Team",
+    level: "All" as const,
+    source: "Blog",
+    type: "Article"
   },
   {
     title: "ProductCraft",
-    description: "Product management insights and best practices",
     url: "https://productcraft.com/",
-    category: "blog"
+    description: "Product management insights and best practices from experienced PMs and industry leaders",
+    category: "Product Management", 
+    tags: ["Insights", "Best Practices", "Leadership", "Strategy"],
+    format: "Blog",
+    author: "ProductCraft Team",
+    level: "All" as const,
+    source: "Blog",
+    type: "Article"
+  },
+  {
+    title: "Lenny's Newsletter",
+    url: "https://www.lennysnewsletter.com/",
+    description: "The most popular product management newsletter with deep dives into growth, strategy, and career advice",
+    category: "Newsletter",
+    tags: ["Newsletter", "Growth", "Strategy", "Career"],
+    format: "Newsletter",
+    author: "Lenny Rachitsky",
+    level: "Intermediate" as const,
+    source: "Substack",
+    type: "Newsletter"
+  },
+  {
+    title: "First Round Review",
+    url: "https://review.firstround.com/",
+    description: "In-depth articles on product management, leadership, and startup best practices from First Round Capital",
+    category: "Startup",
+    tags: ["Leadership", "Startup", "Best Practices", "Strategy"],
+    format: "Blog",
+    author: "First Round Team",
+    level: "Advanced" as const,
+    source: "Blog",
+    type: "Article"
   }
 ];
 
 export const linkedinResources = [
   {
-    title: "Product Management Network",
-    description: "Connect with product professionals",
-    url: "https://www.linkedin.com/groups/123456/",
-    category: "linkedin"
+    title: "Shreyas Doshi",
+    url: "https://www.linkedin.com/in/shreyasdoshi/",
+    description: "Product leader sharing frameworks and mental models for better product decisions",
+    category: "Product Management",
+    tags: ["Frameworks", "Mental Models", "Leadership", "Strategy"],
+    format: "LinkedIn Profile",
+    author: "Shreyas Doshi",
+    level: "Intermediate" as const,
+    source: "LinkedIn",
+    type: "Profile"
   },
   {
-    title: "Product Management Jobs",
-    description: "Find product management opportunities",
-    url: "https://www.linkedin.com/jobs/",
-    category: "linkedin"
+    title: "Lenny Rachitsky",
+    url: "https://www.linkedin.com/in/lennyrachitsky/",
+    description: "Product and growth advisor sharing insights on product strategy and growth tactics",
+    category: "Growth",
+    tags: ["Growth", "Strategy", "Product", "Insights"],
+    format: "LinkedIn Profile", 
+    author: "Lenny Rachitsky",
+    level: "Advanced" as const,
+    source: "LinkedIn",
+    type: "Profile"
+  },
+  {
+    title: "Product Management",
+    url: "https://www.linkedin.com/groups/42629/",
+    description: "Large LinkedIn group for product management professionals to share insights and network",
+    category: "Community",
+    tags: ["Community", "Networking", "Discussion", "Jobs"],
+    format: "LinkedIn Group",
+    author: "PM Community",
+    level: "All" as const,
+    source: "LinkedIn",
+    type: "Group"
   }
 ];
 
 export const courseResources = [
   {
-    title: "Product Management 101",
-    description: "Introduction to product management",
+    title: "Product Management Fundamentals",
     url: "https://www.coursera.org/learn/product-management",
-    category: "course"
+    description: "Comprehensive introduction to product management covering strategy, development, and launch",
+    category: "Product Management",
+    tags: ["Fundamentals", "Strategy", "Development", "Launch"],
+    format: "Online Course",
+    author: "Coursera",
+    level: "Beginner" as const,
+    source: "Coursera",
+    type: "Course"
   },
   {
     title: "Advanced Product Management",
-    description: "Deep dive into product strategy",
     url: "https://www.udemy.com/course/advanced-product-management/",
-    category: "course"
+    description: "Deep dive into advanced product strategy, metrics, and leadership for experienced PMs",
+    category: "Advanced",
+    tags: ["Advanced", "Strategy", "Metrics", "Leadership"],
+    format: "Online Course",
+    author: "Udemy Instructor",
+    level: "Advanced" as const,
+    source: "Udemy", 
+    type: "Course"
+  },
+  {
+    title: "Product School Certification",
+    url: "https://productschool.com/",
+    description: "Industry-recognized product management certification program with hands-on projects",
+    category: "Certification",
+    tags: ["Certification", "Hands-on", "Projects", "Career"],
+    format: "Certification Program",
+    author: "Product School",
+    level: "Intermediate" as const,
+    source: "Product School",
+    type: "Certification"
   }
 ];
 
 export const pdfResources = [
   {
     title: "Product Requirements Document Template",
-    description: "Template for writing PRDs",
     url: "/templates/prd-template.pdf",
-    category: "pdf"
+    description: "Comprehensive PRD template with sections for requirements, user stories, and acceptance criteria",
+    category: "Template",
+    tags: ["Template", "PRD", "Requirements", "Documentation"],
+    format: "PDF Template",
+    author: "PMStarter",
+    level: "Beginner" as const,
+    source: "Template",
+    type: "Document"
   },
   {
     title: "Product Roadmap Template",
-    description: "Template for product roadmaps",
-    url: "/templates/roadmap-template.pdf",
-    category: "pdf"
+    url: "/templates/roadmap-template.pdf", 
+    description: "Strategic product roadmap template for planning and communicating product vision",
+    category: "Template",
+    tags: ["Template", "Roadmap", "Strategy", "Planning"],
+    format: "PDF Template",
+    author: "PMStarter",
+    level: "Intermediate" as const,
+    source: "Template",
+    type: "Document"
+  },
+  {
+    title: "User Research Guide",
+    url: "/templates/user-research-guide.pdf",
+    description: "Complete guide to conducting user research including methods, templates, and analysis",
+    category: "Research",
+    tags: ["Research", "User Research", "Methods", "Analysis"],
+    format: "PDF Guide",
+    author: "PMStarter",
+    level: "All" as const,
+    source: "Guide",
+    type: "Document"
   }
 ];
 
