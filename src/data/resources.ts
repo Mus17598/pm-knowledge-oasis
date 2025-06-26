@@ -615,17 +615,147 @@ export const pdfResources = [
 
 export const pmProfiles = [
   {
-    name: "Marty Cagan",
-    title: "Founder, Silicon Valley Product Group",
-    description: "Product management thought leader and author",
-    url: "https://www.linkedin.com/in/cagan/",
-    image: "https://media.licdn.com/dms/image/C5603AQHXgQzQwXqQYw/profile-displayphoto-shrink_800_800/0/1516256199140?e=1718236800&v=beta&t=YQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQ"
+    name: "Lenny Rachitsky",
+    role: "Product & Growth Advisor",
+    company: "Former Airbnb",
+    highlight: "Author of Lenny's Newsletter - the most popular product management newsletter with 500k+ subscribers",
+    tags: ["Newsletter", "Growth", "Product Strategy", "Metrics"],
+    linkedinUrl: "https://www.linkedin.com/in/lennyrachitsky/"
   },
   {
     name: "Shreyas Doshi",
-    title: "Product Leader & Advisor",
-    description: "Former PM at Stripe, Twitter, and Yahoo",
-    url: "https://www.linkedin.com/in/shreyasdoshi/",
-    image: "https://media.licdn.com/dms/image/C5603AQHXgQzQwXqQYw/profile-displayphoto-shrink_800_800/0/1516256199140?e=1718236800&v=beta&t=YQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQ"
+    role: "Product Leader & Advisor",
+    company: "Former Stripe, Twitter",
+    highlight: "Known for clear product thinking frameworks and mental models that help PMs make better decisions",
+    tags: ["Frameworks", "Mental Models", "Leadership", "Strategy"],
+    linkedinUrl: "https://www.linkedin.com/in/shreyasdoshi/"
+  },
+  {
+    name: "Marty Cagan",
+    role: "Founder & Partner",
+    company: "Silicon Valley Product Group",
+    highlight: "Author of 'Inspired' and 'Empowered' - foundational books for modern product management",
+    tags: ["Books", "Product Discovery", "Team Empowerment", "Coaching"],
+    linkedinUrl: "https://www.linkedin.com/in/cagan/"
+  },
+  {
+    name: "April Dunford",
+    role: "Positioning Expert",
+    company: "Ambient Strategy",
+    highlight: "Author of 'Obviously Awesome' - the definitive guide to product positioning and messaging",
+    tags: ["Positioning", "Messaging", "Go-to-Market", "B2B"],
+    linkedinUrl: "https://www.linkedin.com/in/aprildunford/"
+  },
+  {
+    name: "Teresa Torres",
+    role: "Product Discovery Coach",
+    company: "Product Talk",
+    highlight: "Expert in continuous product discovery and author of 'Continuous Discovery Habits'",
+    tags: ["Discovery", "Research", "Customer Interviews", "Coaching"],
+    linkedinUrl: "https://www.linkedin.com/in/teresatorres/"
+  },
+  {
+    name: "John Cutler",
+    role: "Product Evangelist",
+    company: "Amplitude",
+    highlight: "Thought leader on product operations, experimentation, and building high-performing product teams",
+    tags: ["Product Ops", "Experimentation", "Data", "Team Building"],
+    linkedinUrl: "https://www.linkedin.com/in/johnpcutler/"
+  },
+  {
+    name: "Gibson Biddle",
+    role: "Former VP Product",
+    company: "Netflix",
+    highlight: "Led product at Netflix during hypergrowth, known for strategic thinking and product leadership insights",
+    tags: ["Strategy", "Leadership", "Scaling", "Entertainment"],
+    linkedinUrl: "https://www.linkedin.com/in/gibsonbiddle/"
+  },
+  {
+    name: "Melissa Perri",
+    role: "CEO & Founder",
+    company: "Produx Labs",
+    highlight: "Author of 'Escaping the Build Trap' and leading voice on product management best practices",
+    tags: ["Product Strategy", "Leadership", "Consulting", "Education"],
+    linkedinUrl: "https://www.linkedin.com/in/melissajperri/"
+  },
+  {
+    name: "Gokul Rajaram",
+    role: "Product & Business Advisor",
+    company: "Former Google, Square",
+    highlight: "Known as the 'Godfather of AdSense' and expert in product-led growth and business strategy",
+    tags: ["AdTech", "Growth", "Business Strategy", "Investing"],
+    linkedinUrl: "https://www.linkedin.com/in/gokulrajaram/"
+  },
+  {
+    name: "Jiaona Zhang",
+    role: "VP Product",
+    company: "Webflow",
+    highlight: "Product leader with expertise in design tools, creator economy, and product-led growth",
+    tags: ["Design Tools", "Creator Economy", "PLG", "Leadership"],
+    linkedinUrl: "https://www.linkedin.com/in/jiaonazhang/"
+  },
+  {
+    name: "Deb Liu",
+    role: "CEO",
+    company: "Ancestry",
+    highlight: "Former Facebook VP who led Marketplace to $100B+ GMV, author of 'Take Back Your Power'",
+    tags: ["Marketplace", "Leadership", "Women in Tech", "Growth"],
+    linkedinUrl: "https://www.linkedin.com/in/debliu/"
+  },
+  {
+    name: "Sachin Rekhi",
+    role: "Founder & CEO",
+    company: "Notejoy",
+    highlight: "Former LinkedIn product leader and prolific writer on product management topics",
+    tags: ["Product Leadership", "Startups", "Writing", "Community"],
+    linkedinUrl: "https://www.linkedin.com/in/sachinrekhi/"
+  },
+  {
+    name: "Reforge Team",
+    role: "Growth & Product Education",
+    company: "Reforge",
+    highlight: "Advanced courses and frameworks for senior product managers and growth professionals",
+    tags: ["Education", "Advanced", "Growth", "Frameworks"],
+    linkedinUrl: "https://www.linkedin.com/company/reforge/"
+  },
+  {
+    name: "Jackie Bavaro",
+    role: "Head of Product",
+    company: "Asana",
+    highlight: "Co-author of 'Cracking the PM Interview' and expert in product management career development",
+    tags: ["Interviews", "Career", "Books", "Mentorship"],
+    linkedinUrl: "https://www.linkedin.com/in/jackiebavaro/"
+  },
+  {
+    name: "Kenneth Berger",
+    role: "VP Product",
+    company: "Slack",
+    highlight: "Product leader focused on enterprise products and building products that scale globally",
+    tags: ["Enterprise", "Scaling", "B2B", "Global Products"],
+    linkedinUrl: "https://www.linkedin.com/in/kennethberger/"
+  },
+  {
+    name: "Elena Verna",
+    role: "Growth Advisor",
+    company: "Former Amplitude, Miro",
+    highlight: "Growth expert and advisor helping companies build sustainable growth engines",
+    tags: ["Growth", "Metrics", "Retention", "Consulting"],
+    linkedinUrl: "https://www.linkedin.com/in/elenaverna/"
+  },
+  {
+    name: "Nir Eyal",
+    role: "Author & Consultant",
+    company: "Nir and Far",
+    highlight: "Author of 'Hooked' and 'Indistractable' - expert in behavioral design and user psychology",
+    tags: ["Behavioral Design", "Psychology", "Habits", "Books"],
+    linkedinUrl: "https://www.linkedin.com/in/nireyal/"
+  },
+  {
+    name: "Kenton Kivestu",
+    role: "VP Product",
+    company: "Google",
+    highlight: "Product leader at Google working on search and AI products, known for technical product insights",
+    tags: ["Search", "AI", "Technical Products", "Google"],
+    linkedinUrl: "https://www.linkedin.com/in/kentonkivestu/"
   }
 ];
