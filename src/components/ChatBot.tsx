@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Badge } from '@/components/ui/badge';
 import { toast } from '@/components/ui/use-toast';
+import { useResourceModal } from './ResourceModalContext';
 
 type ExperienceLevel = 'Beginner' | 'Intermediate' | 'Advanced';
 
@@ -21,6 +22,7 @@ export function ChatBot() {
   const [input, setInput] = useState('');
   const [level, setLevel] = useState<ExperienceLevel>('Beginner');
   const [isLoading, setIsLoading] = useState(false);
+  const { modalOpen } = useResourceModal();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -46,7 +48,7 @@ export function ChatBot() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('/api/chat', {
+      const response = await fetch('http://localhost:3000/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -63,13 +65,13 @@ export function ChatBot() {
 
       const data = await response.json();
       
-      if (!data.response) {
+      if (!data.reply) {
         throw new Error('No response received from the server');
       }
 
       setMessages(prev => [...prev, {
         role: 'assistant',
-        content: data.response,
+        content: data.reply,
         level
       }]);
     } catch (error) {
@@ -90,7 +92,7 @@ export function ChatBot() {
   };
 
   return (
-    <Card className="w-full">
+    <Card className={`w-full transition-all duration-300 ${modalOpen ? 'scale-90 opacity-50 blur-sm shadow-2xl' : ''}`}>
       <CardHeader>
         <CardTitle className="text-center mb-4">PM Assistant</CardTitle>
         <div className="flex justify-center">
@@ -128,11 +130,6 @@ export function ChatBot() {
                       : 'bg-muted'
                   }`}
                 >
-                  {message.level && message.role === 'assistant' && (
-                    <Badge variant="secondary" className="mb-2">
-                      {message.level} Level
-                    </Badge>
-                  )}
                   <p className="whitespace-pre-wrap">{message.content}</p>
                 </div>
               </div>

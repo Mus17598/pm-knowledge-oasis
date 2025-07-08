@@ -1,5 +1,4 @@
-
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Search, Filter, Coffee, ChevronDown, ChevronUp, ExternalLink, Youtube, FileText, Linkedin, BookOpen, Download, Mail, User } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -10,10 +9,11 @@ import PMProfile from '@/components/PMProfile';
 import CoffeeButton from '@/components/CoffeeButton';
 import Navigation from '@/components/Navigation';
 import { ThemeProvider } from '@/components/ThemeProvider';
-import { youtubeResources, blogResources, linkedinResources, courseResources, pdfResources, pmProfiles } from '@/data/resources';
+import { youtubeResources, blogsAndArticles, linkedinPosts, courseResources, templates, caseStudies } from '@/data/resources';
 
 const Index = () => {
   const [expandedSections, setExpandedSections] = useState<string[]>([]);
+  const [articles, setArticles] = useState([]);
 
   const toggleSection = (sectionId: string) => {
     setExpandedSections(prev => 
@@ -37,7 +37,7 @@ const Index = () => {
       title: 'Blogs & Medium Articles',
       icon: FileText,
       description: 'In-depth articles and thought leadership',
-      resources: blogResources,
+      resources: blogsAndArticles,
       color: 'from-blue-500 to-blue-600'
     },
     {
@@ -45,7 +45,7 @@ const Index = () => {
       title: 'LinkedIn Posts',
       icon: Linkedin,
       description: 'Insights and discussions from PM community',
-      resources: linkedinResources,
+      resources: linkedinPosts,
       color: 'from-blue-700 to-blue-800'
     },
     {
@@ -61,10 +61,24 @@ const Index = () => {
       title: 'PDFs & Downloadables',
       icon: Download,
       description: 'Templates, frameworks, and guides',
-      resources: pdfResources,
+      resources: templates,
       color: 'from-purple-500 to-purple-600'
+    },
+    {
+      id: 'people',
+      title: 'People to Follow',
+      icon: User,
+      description: 'Top PM professionals and thought leaders',
+      resources: pmProfiles,
+      color: 'from-orange-500 to-orange-600'
     }
   ];
+
+  useEffect(() => {
+    fetch("http://localhost:3000/api/top-articles")
+      .then(res => res.json())
+      .then(setArticles);
+  }, []);
 
   return (
     <ThemeProvider defaultTheme="light" storageKey="pmstarter-theme">
@@ -159,58 +173,24 @@ const Index = () => {
                   
                   {isExpanded && (
                     <CardContent className="animate-fade-in p-8 pt-0">
-                      <ResourceSection 
-                        resources={section.resources}
-                        sectionId={section.id}
-                      />
+                      {section.id === 'people' ? (
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                          {pmProfiles.map((profile, index) => (
+                            <PMProfile key={index} profile={profile} />
+                          ))}
+                        </div>
+                      ) : (
+                        <ResourceSection 
+                          resources={section.resources}
+                          sectionId={section.id}
+                        />
+                      )}
                     </CardContent>
                   )}
                 </Card>
               );
             })}
           </div>
-
-          {/* PMs to Follow Section */}
-          <Card id="pm-profiles" className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md border-0 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-2xl overflow-hidden mt-8 scroll-mt-20">
-            <CardHeader 
-              className="cursor-pointer hover:bg-gradient-to-r hover:from-orange-50 hover:to-white dark:hover:from-gray-700 dark:hover:to-gray-800 transition-all duration-300 p-8"
-              onClick={() => toggleSection('pm-profiles')}
-            >
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-6">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-r from-orange-500 to-orange-600 flex items-center justify-center shadow-lg">
-                    <span className="text-3xl">🌟</span>
-                  </div>
-                  <div>
-                    <CardTitle className="text-2xl md:text-3xl text-gray-800 dark:text-gray-100 mb-2">PMs to Follow on LinkedIn</CardTitle>
-                    <p className="text-gray-600 dark:text-gray-300 text-lg">Learn from industry leaders and thought pioneers</p>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <Badge variant="secondary" className="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 text-sm font-semibold rounded-full">
-                    {pmProfiles.length} profiles
-                  </Badge>
-                  <div className="w-12 h-12 rounded-full bg-primary-100 dark:bg-primary-900 flex items-center justify-center">
-                    {expandedSections.includes('pm-profiles') ? (
-                      <ChevronUp className="w-6 h-6 text-primary-600 dark:text-primary-400" />
-                    ) : (
-                      <ChevronDown className="w-6 h-6 text-primary-600 dark:text-primary-400" />
-                    )}
-                  </div>
-                </div>
-              </div>
-            </CardHeader>
-            
-            {expandedSections.includes('pm-profiles') && (
-              <CardContent className="animate-fade-in p-8 pt-0">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {pmProfiles.map((profile, index) => (
-                    <PMProfile key={index} profile={profile} />
-                  ))}
-                </div>
-              </CardContent>
-            )}
-          </Card>
 
           {/* Support Section */}
           <Card id="support" className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md border-0 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-2xl overflow-hidden mt-8 scroll-mt-20">
@@ -241,6 +221,36 @@ const Index = () => {
                   </Button>
                 </div>
               </div>
+            </CardContent>
+          </Card>
+
+          {/* People to Follow Section */}
+          <Card id="people-to-follow" className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md border-0 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-2xl overflow-hidden mt-8 scroll-mt-20">
+            <CardHeader className="p-8">
+              <div className="flex items-center space-x-6">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-r from-orange-500 to-orange-600 flex items-center justify-center shadow-lg">
+                  <User className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <CardTitle className="text-2xl md:text-3xl text-gray-800 dark:text-gray-100 mb-2">People to Follow</CardTitle>
+                  <p className="text-gray-600 dark:text-gray-300 text-lg">Top product thinkers and leaders to follow</p>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent className="p-8 pt-0">
+              <ul className="space-y-6">
+                {peopleToFollow.map((person, idx) => (
+                  <li key={idx} className="flex flex-col md:flex-row md:items-center md:space-x-4 bg-orange-50 dark:bg-gray-900 rounded-xl p-4 shadow-sm">
+                    <div className="flex-1">
+                      <div className="font-bold text-lg text-orange-700 dark:text-orange-300">{person.name}</div>
+                      <div className="text-sm text-gray-700 dark:text-gray-200 mb-1">{person.description}</div>
+                      <a href={person.url} target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline font-medium">
+                        Follow on {person.platform}
+                      </a>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </CardContent>
           </Card>
         </main>
