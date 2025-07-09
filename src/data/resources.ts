@@ -659,170 +659,86 @@ export const templates = [
   }
 ];
 
+export const linkedinResources = [
+  {
+    title: "Product Management Network",
+    description: "Connect with product professionals",
+    url: "https://www.linkedin.com/groups/123456/",
+    tags: ["Networking", "Community", "Professional Development"],
+    source: "LinkedIn",
+    level: "Beginner" as const,
+    type: "Group"
+  },
+  {
+    title: "Product Management Jobs",
+    description: "Find product management opportunities",
+    url: "https://www.linkedin.com/jobs/",
+    tags: ["Jobs", "Career", "Opportunities"],
+    source: "LinkedIn",
+    level: "Beginner" as const,
+    type: "Job Board"
+  }
+];
+
 export const courseResources = [
   {
-    title: "Google Product Management Certificate",
-    url: "https://www.coursera.org/professional-certificates/google-product-management",
-    description: "Professional certificate program designed by Google covering all aspects of product management.",
-    category: "Product Management",
-    tags: ["Certificate", "Google", "Professional", "Comprehensive"],
-    format: "Course",
-    author: "Google",
+    title: "Product Management 101",
+    description: "Introduction to product management",
+    url: "https://www.coursera.org/learn/product-management",
+    tags: ["Fundamentals", "Introduction", "Basics"],
     source: "Coursera",
-    level: "Beginner"
+    level: "Beginner" as const,
+    type: "Course"
   },
   {
-    title: "Become a Product Manager | Learn the Skills & Get the Job",
-    url: "https://www.udemy.com/course/become-a-product-manager-learn-the-skills-get-a-job/",
-    description: "A top-rated Udemy course covering product management skills, tools, and interview prep.",
-    category: "Product Management",
-    tags: ["Udemy", "Career", "Skills"],
-    format: "Course",
-    author: "Cole Mercer & Evan Kimbrell",
+    title: "Advanced Product Management",
+    description: "Deep dive into product strategy",
+    url: "https://www.udemy.com/course/advanced-product-management/",
+    tags: ["Advanced", "Strategy", "Leadership"],
     source: "Udemy",
-    level: "Beginner"
+    level: "Advanced" as const,
+    type: "Course"
+  }
+];
+
+export const pdfResources = [
+  {
+    title: "Product Requirements Document Template",
+    description: "Template for writing PRDs",
+    url: "/templates/prd-template.pdf",
+    tags: ["Templates", "PRD", "Documentation"],
+    source: "Template",
+    level: "Intermediate" as const,
+    type: "PDF"
   },
   {
-    title: "Digital Product Management: Modern Fundamentals",
-    url: "https://www.coursera.org/learn/uva-darden-digital-product-management",
-    description: "Learn modern product management fundamentals from the University of Virginia.",
-    category: "Product Management",
-    tags: ["Digital", "Fundamentals", "University"],
-    format: "Course",
-    author: "University of Virginia",
-    source: "Coursera",
-    level: "Intermediate"
+    title: "Product Roadmap Template",
+    description: "Template for product roadmaps",
+    url: "/templates/roadmap-template.pdf",
+    tags: ["Templates", "Roadmap", "Planning"],
+    source: "Template",
+    level: "Intermediate" as const,
+    type: "PDF"
+  }
+];
+
+export const pmProfiles = [
+  {
+    name: "Marty Cagan",
+    role: "Founder",
+    company: "Silicon Valley Product Group",
+    highlight: "Product management thought leader and author of 'Inspired'",
+    tags: ["Product Strategy", "Leadership", "Author"],
+    linkedinUrl: "https://www.linkedin.com/in/cagan/",
+    avatar: "https://media.licdn.com/dms/image/C5603AQHXgQzQwXqQYw/profile-displayphoto-shrink_800_800/0/1516256199140?e=1718236800&v=beta&t=YQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQ"
   },
   {
-    title: "Product Strategy",
-    url: "https://www.northeastern.edu/graduate/program/product-strategy-certificate/",
-    description: "A certificate course on product strategy from Northeastern University.",
-    category: "Strategy",
-    tags: ["Strategy", "Certificate", "University"],
-    format: "Course",
-    author: "Northeastern University",
-    source: "Northeastern",
-    level: "Advanced"
-  },
-  {
-    title: "Product Management First Steps",
-    url: "https://www.linkedin.com/learning/product-management-first-steps",
-    description: "A beginner-friendly course on the basics of product management.",
-    category: "Product Management",
-    tags: ["LinkedIn", "Beginner", "Basics"],
-    format: "Course",
-    author: "LinkedIn Learning",
-    source: "LinkedIn Learning",
-    level: "Beginner"
-  },
-  {
-    title: "Brand and Product Management",
-    url: "https://www.coursera.org/learn/brand-and-product-management",
-    description: "Learn how to manage brands and products for business growth.",
-    category: "Branding",
-    tags: ["Branding", "Product", "Growth"],
-    format: "Course",
-    author: "IE Business School",
-    source: "Coursera",
-    level: "Intermediate"
-  },
-  {
-    title: "Agile Meets Design Thinking",
-    url: "https://www.coursera.org/learn/uva-darden-agile-meets-design-thinking",
-    description: "Combine agile methodologies with design thinking for better product outcomes.",
-    category: "Agile",
-    tags: ["Agile", "Design Thinking", "Innovation"],
-    format: "Course",
-    author: "University of Virginia",
-    source: "Coursera",
-    level: "Intermediate"
-  },
-  {
-    title: "Product Management with Lean, Agile and System Design Thinking",
-    url: "https://www.edx.org/course/product-management-with-lean-agile-and-system-design-thinking",
-    description: "A comprehensive course on modern PM methods.",
-    category: "Product Management",
-    tags: ["Lean", "Agile", "System Design"],
-    format: "Course",
-    author: "edX",
-    source: "edX",
-    level: "Advanced"
-  },
-  {
-    title: "Product Management: Building Great Products",
-    url: "https://www.udemy.com/course/product-management-building-great-products/",
-    description: "Learn how to build products that users love.",
-    category: "Product Management",
-    tags: ["Product", "Building", "Udemy"],
-    format: "Course",
-    author: "Udemy",
-    source: "Udemy",
-    level: "Intermediate"
-  },
-  {
-    title: "Introduction to Product Management",
-    url: "https://www.coursera.org/learn/introduction-product-management",
-    description: "A beginner's guide to product management.",
-    category: "Product Management",
-    tags: ["Introduction", "Beginner", "Coursera"],
-    format: "Course",
-    author: "Coursera",
-    source: "Coursera",
-    level: "Beginner"
-  },
-  {
-    title: "Product Management for AI & Data Science",
-    url: "https://www.udemy.com/course/product-management-for-ai-data-science/",
-    description: "Specialized course for PMs working on AI and data products.",
-    category: "AI/ML",
-    tags: ["AI", "Data Science", "Udemy"],
-    format: "Course",
-    author: "Udemy",
-    source: "Udemy",
-    level: "Advanced"
-  },
-  {
-    title: "Software Product Management Specialization",
-    url: "https://www.coursera.org/specializations/product-management",
-    description: "A multi-course specialization for aspiring software PMs.",
-    category: "Software",
-    tags: ["Software", "Specialization", "Coursera"],
-    format: "Course",
-    author: "University of Alberta",
-    source: "Coursera",
-    level: "Intermediate"
-  },
-  {
-    title: "Product Management: Transforming Opportunities into Great Products",
-    url: "https://www.edx.org/course/product-management-transforming-opportunities-into-great-products",
-    description: "Transform ideas into successful products.",
-    category: "Product Management",
-    tags: ["Transformation", "Opportunities", "edX"],
-    format: "Course",
-    author: "edX",
-    source: "edX",
-    level: "Intermediate"
-  },
-  {
-    title: "Product Management for Beginners",
-    url: "https://www.udemy.com/course/product-management-for-beginners/",
-    description: "A crash course for those new to product management.",
-    category: "Product Management",
-    tags: ["Beginner", "Udemy", "Crash Course"],
-    format: "Course",
-    author: "Udemy",
-    source: "Udemy",
-    level: "Beginner"
-  },
-  {
-    title: "Product-Led Growth Certification",
-    url: "https://productled.com/certification/",
-    description: "Certification program for mastering product-led growth.",
-    category: "Growth",
-    tags: ["PLG", "Certification", "Growth"],
-    format: "Course",
-    author: "ProductLed",
-    source: "ProductLed",
-    level: "Advanced"
+    name: "Shreyas Doshi",
+    role: "Product Leader & Advisor",
+    company: "Independent",
+    highlight: "Former PM at Stripe, Twitter, and Yahoo with insights on product thinking",
+    tags: ["Product Thinking", "Strategy", "Leadership"],
+    linkedinUrl: "https://www.linkedin.com/in/shreyasdoshi/",
+    avatar: "https://media.licdn.com/dms/image/C5603AQHXgQzQwXqQYw/profile-displayphoto-shrink_800_800/0/1516256199140?e=1718236800&v=beta&t=YQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZQ"
   }
 ];
