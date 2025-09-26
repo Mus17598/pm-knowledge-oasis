@@ -350,7 +350,7 @@ export function ResourceList() {
     fetch("http://localhost:3000/api/top-articles")
       .then(res => res.json())
       .then(data => {
-        setArticles(data);
+        setArticles(data.articles || []);
         setLoading(false);
       })
       .catch(() => {
