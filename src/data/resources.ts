@@ -167,6 +167,105 @@ export const blogsAndArticles = [
     author: "Harvard Business Review",
     source: "HBR",
     level: "Advanced"
+  },
+  {
+    title: "What Makes a Great Product Manager",
+    url: "https://sachinrekhi.com/what-makes-a-great-product-manager",
+    description: "Key skills and traits of successful product managers.",
+    category: "Career",
+    tags: ["Career", "Skills", "Leadership"],
+    format: "Article",
+    author: "Sachin Rekhi",
+    source: "Sachin Rekhi",
+    level: "Beginner"
+  },
+  {
+    title: "How to Run Effective Product Reviews",
+    url: "https://www.reforge.com/blog/product-reviews",
+    description: "Best practices for conducting product reviews that drive results.",
+    category: "Process",
+    tags: ["Reviews", "Process", "Management"],
+    format: "Article",
+    author: "Reforge",
+    source: "Reforge",
+    level: "Intermediate"
+  },
+  {
+    title: "The Complete Guide to Product-Market Fit",
+    url: "https://www.lennysnewsletter.com/p/how-to-know-if-youve-got-productmarket",
+    description: "Comprehensive guide to finding and measuring product-market fit.",
+    category: "Strategy",
+    tags: ["Product-Market Fit", "Strategy", "Growth"],
+    format: "Article",
+    author: "Lenny Rachitsky",
+    source: "Lenny's Newsletter",
+    level: "Advanced"
+  },
+  {
+    title: "Building Products at Scale: Lessons from Stripe",
+    url: "https://stripe.com/blog/scaling-product-development",
+    description: "How Stripe scales product development and maintains quality.",
+    category: "Scale",
+    tags: ["Scaling", "Process", "Team"],
+    format: "Article",
+    author: "Stripe",
+    source: "Stripe Blog",
+    level: "Advanced"
+  },
+  {
+    title: "OKRs for Product Teams",
+    url: "https://www.whatmatters.com/articles/okrs-product-teams",
+    description: "How to implement OKRs effectively in product management.",
+    category: "Planning",
+    tags: ["OKRs", "Planning", "Goals"],
+    format: "Article",
+    author: "What Matters",
+    source: "What Matters",
+    level: "Intermediate"
+  },
+  {
+    title: "The Psychology of Product Design",
+    url: "https://www.nngroup.com/articles/psychology-product-design/",
+    description: "Applying psychological principles to product design decisions.",
+    category: "Design",
+    tags: ["Psychology", "Design", "UX"],
+    format: "Article",
+    author: "Nielsen Norman Group",
+    source: "NNG",
+    level: "Intermediate"
+  },
+  {
+    title: "Data-Driven Product Management",
+    url: "https://amplitude.com/blog/data-driven-product-management",
+    description: "How to make product decisions based on data, not opinions.",
+    category: "Analytics",
+    tags: ["Data", "Analytics", "Decision Making"],
+    format: "Article",
+    author: "Amplitude",
+    source: "Amplitude",
+    level: "Intermediate"
+  },
+  {
+    title: "Product-Led Growth Strategies",
+    url: "https://openviewpartners.com/blog/what-is-product-led-growth/",
+    description: "Understanding and implementing product-led growth tactics.",
+    category: "Growth",
+    tags: ["PLG", "Growth", "Strategy"],
+    format: "Article",
+    author: "OpenView Partners",
+    source: "OpenView",
+    level: "Advanced"
+  },
+  {
+    title: "The Art of Product Positioning",
+    url: "https://a16z.com/obviously-awesome-product-positioning/",
+    description: "How to position your product to win in the market.",
+    category: "Marketing",
+    tags: ["Positioning", "Marketing", "Go-to-Market"],
+    format: "Article",
+    author: "a16z",
+    source: "a16z",
+    level: "Intermediate"
   }
 ];
 

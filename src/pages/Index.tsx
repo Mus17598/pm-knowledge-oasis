@@ -10,6 +10,8 @@ import CoffeeButton from '@/components/CoffeeButton';
 import Navigation from '@/components/Navigation';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { youtubeResources, blogsAndArticles, linkedinPosts, courseResources, templates, caseStudies } from '@/data/resources';
+import { pmProfiles } from '@/data/pmProfiles';
+import { peopleToFollow } from '@/data/peopleToFollow';
 
 const Index = () => {
   const [expandedSections, setExpandedSections] = useState<string[]>([]);
