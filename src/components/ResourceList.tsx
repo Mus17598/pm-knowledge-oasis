@@ -347,7 +347,7 @@ export function ResourceList() {
 
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:3000/api/top-articles")
+    fetch("/api/top-articles")
       .then(res => res.json())
       .then(data => {
         setArticles(data.articles || []);

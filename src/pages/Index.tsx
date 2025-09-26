@@ -77,7 +77,7 @@ const Index = () => {
   ];
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/top-articles")
+    fetch("/api/top-articles")
       .then(res => res.json())
       .then(setArticles);
   }, []);
