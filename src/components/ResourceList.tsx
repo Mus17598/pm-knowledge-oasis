@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useResourceModal } from './ResourceModalContext';
+import { blogsAndArticles } from '@/data/resources';
 import ReactDOM from 'react-dom';
 
 const staticResources = {
@@ -336,7 +337,7 @@ function Modal({ open, onClose, title, children }) {
 }
 
 export function ResourceList() {
-  const [articles, setArticles] = useState([]);
+  const [articles, setArticles] = useState(blogsAndArticles);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [openSection, setOpenSection] = useState("articles");
@@ -344,20 +345,6 @@ export function ResourceList() {
   const { setModalOpen, modalOpen } = useResourceModal();
 
   console.log('modalOpen in ChatBot:', modalOpen);
-
-  useEffect(() => {
-    setLoading(true);
-    fetch("/api/top-articles")
-      .then(res => res.json())
-      .then(data => {
-        setArticles(data.articles || []);
-        setLoading(false);
-      })
-      .catch(() => {
-        setError("Failed to load articles.");
-        setLoading(false);
-      });
-  }, []);
 
   // Update context when modalSection changes
   useEffect(() => {
